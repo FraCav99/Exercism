@@ -1,3 +1,8 @@
+/**
+ * You can check out all other solutions at 👇
+ * https://github.com/FraCav99/Exercism
+ */
+
 const WIN = 'win';
 const LOSS = 'loss';
 const DRAW = 'draw';

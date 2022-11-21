@@ -1,3 +1,8 @@
+/**
+ * You can check out all other solutions at 👇
+ * https://github.com/FraCav99/Exercism
+ */
+
 const testing = [
   [(phoneNumber) => /[a-z]/i.test(phoneNumber), 'Letters not permitted'],
   [(phoneNumber) => /[^.+()-\w\s]/.test(phoneNumber), 'Punctuations not permitted'],
