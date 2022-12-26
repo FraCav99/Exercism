@@ -14,7 +14,6 @@ export const COLOR_CODE: ColorCode = {
 }
 
 export function decodedResistorValue([firstBand, secondBand, digits]: string[]): string {
-  const repeatedDigits = '0'.repeat(COLOR_CODE[digits]);
-  const number = +`${COLOR_CODE[firstBand]}${COLOR_CODE[secondBand]}${repeatedDigits}`;
+  const number = ((COLOR_CODE[firstBand] * 10) + COLOR_CODE[secondBand]) * (10 ** COLOR_CODE[digits]);
   return number < 1000 ? `${number} ohms` : `${number / 1000} kiloohms`;
 }
