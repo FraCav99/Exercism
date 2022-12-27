@@ -13,7 +13,5 @@ export function toRna(dnaStrand: string): string {
     throw new Error('Invalid input DNA.');
   }
 
-  return dnaStrand
-    .split('')
-    .reduce((rna: string, nextChar: string) => rna + rnaMap[nextChar], '');
+  return dnaStrand.replace(/[GCTA]/g, (char: string) => rnaMap[char]);
 }
