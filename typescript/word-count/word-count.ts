@@ -3,7 +3,7 @@ export function count(text: string): Map<string, number> {
 
   const obj: {[key: string]: number} = {};
   matches.forEach((word: string) => {
-    if (Object.hasOwn(obj, word)) {
+    if (obj.hasOwnProperty(word)) {
       obj[word]++;
     } else {
       obj[word] = 1;
